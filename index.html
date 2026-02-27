@@ -70,7 +70,6 @@
             background: radial-gradient(circle, #c8b5fc, transparent 70%);
             top: -100px;
             left: -120px;
-            animation: blobMove1 12s ease-in-out infinite alternate;
         }
 
         body::after {
@@ -79,28 +78,8 @@
             background: radial-gradient(circle, #9ae8dd, transparent 70%);
             bottom: -60px;
             right: -80px;
-            animation: blobMove2 14s ease-in-out infinite alternate;
         }
 
-        @keyframes blobMove1 {
-            from {
-                transform: translate(0, 0) scale(1);
-            }
-
-            to {
-                transform: translate(60px, 80px) scale(1.1);
-            }
-        }
-
-        @keyframes blobMove2 {
-            from {
-                transform: translate(0, 0) scale(1);
-            }
-
-            to {
-                transform: translate(-50px, -70px) scale(1.12);
-            }
-        }
 
         /* ─── Container ─────────────────────────────────────────────── */
         .page {
@@ -121,7 +100,6 @@
             align-items: center;
             text-align: center;
             margin-bottom: 36px;
-            animation: fadeDown 0.6s ease both;
         }
 
         /* ─── Dual Logo Row ───────────────────────────────────────── */
@@ -220,7 +198,6 @@
             color: var(--text-primary);
             transition: background var(--transition), border-color var(--transition),
                 transform var(--transition), box-shadow var(--transition);
-            animation: fadeUp 0.5s ease both;
             cursor: pointer;
             position: relative;
             overflow: hidden;
@@ -249,30 +226,6 @@
             box-shadow: 0 8px 28px rgba(123, 92, 246, 0.10);
         }
 
-        /* Staggered entrance animation */
-        .link-card:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-
-        .link-card:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .link-card:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-
-        .link-card:nth-child(4) {
-            animation-delay: 0.4s;
-        }
-
-        .link-card:nth-child(5) {
-            animation-delay: 0.5s;
-        }
-
-        .link-card:nth-child(6) {
-            animation-delay: 0.6s;
-        }
 
         .link-thumb {
             width: 52px;
@@ -339,7 +292,6 @@
         /* ─── Footer ────────────────────────────────────────────────── */
         .footer {
             text-align: center;
-            animation: fadeUp 0.6s ease 0.7s both;
         }
 
         .footer-cta {
@@ -383,30 +335,6 @@
             color: var(--text-primary);
         }
 
-        /* ─── Keyframes ──────────────────────────────────────────────── */
-        @keyframes fadeDown {
-            from {
-                opacity: 0;
-                transform: translateY(-18px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(18px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
 
         /* ─── Responsive ─────────────────────────────────────────────── */
         @media (max-width: 520px) {
