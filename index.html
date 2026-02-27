@@ -526,70 +526,7 @@
 
     </div><!-- /page -->
 
-    <script>
-        // ── Click-ripple effect on link cards ─────────────────────────
-        document.querySelectorAll('.link-card').forEach(card => {
-            card.addEventListener('click', function (e) {
-                const ripple = document.createElement('span');
-                const rect = card.getBoundingClientRect();
-                const size = Math.max(rect.width, rect.height);
-                ripple.style.cssText = `
-          position:absolute; border-radius:50%; background:rgba(255,255,255,0.08);
-          width:${size}px; height:${size}px;
-          left:${e.clientX - rect.left - size / 2}px;
-          top:${e.clientY - rect.top - size / 2}px;
-          transform:scale(0); animation:ripple .55s linear; pointer-events:none;
-        `;
-                card.style.position = 'relative';
-                card.appendChild(ripple);
-                ripple.addEventListener('animationend', () => ripple.remove());
-            });
-        });
 
-        // ── Copy link on double-click ──────────────────────────────────
-        document.querySelectorAll('.link-card').forEach(card => {
-            card.addEventListener('dblclick', function (e) {
-                e.preventDefault();
-                const url = card.href;
-                if (navigator.clipboard) {
-                    navigator.clipboard.writeText(url).then(() => showToast('Link disalin! 📋'));
-                }
-            });
-        });
-
-        // ── Toast Notification ─────────────────────────────────────────
-        function showToast(msg) {
-            const t = document.createElement('div');
-            t.textContent = msg;
-            t.style.cssText = `
-        position:fixed; bottom:30px; left:50%; transform:translateX(-50%) translateY(20px);
-        background:#18182a; color:#f0f0f8; padding:10px 22px; border-radius:999px;
-        font-size:.85rem; font-weight:600; box-shadow:0 4px 20px rgba(0,0,0,.15);
-        border:1px solid rgba(0,0,0,.08); opacity:0;
-        transition: opacity .3s, transform .3s; pointer-events:none; z-index:9999;
-      `;
-            document.body.appendChild(t);
-            requestAnimationFrame(() => {
-                t.style.opacity = '1';
-                t.style.transform = 'translateX(-50%) translateY(0)';
-            });
-            setTimeout(() => {
-                t.style.opacity = '0';
-                t.style.transform = 'translateX(-50%) translateY(10px)';
-                setTimeout(() => t.remove(), 350);
-            }, 2500);
-        }
-    </script>
-
-    <!-- Ripple keyframe injected via JS to keep it isolated -->
-    <style>
-        @keyframes ripple {
-            to {
-                transform: scale(2.5);
-                opacity: 0;
-            }
-        }
-    </style>
 </body>
 
 </html>
