@@ -1,689 +1,590 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuangAI Bootcamp – Links</title>
     <meta name="description"
-        content="Bootcamp Gratis AI Video Creator - Kuasai skill membuat video menggunakan AI dalam 2 hari. Beasiswa penuh dari CODEPOLITAN x Alibaba Cloud.">
-    <title>AI Video Creator Bootcamp - Batch 1 | Gratis 100%</title>
+        content="Kumpulan link resmi RuangAI Bootcamp – platform bootcamp AI terbaik di Indonesia." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* ─── Reset & Base ─────────────────────────────────────────── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+        :root {
+            --bg: #ffffff;
+            --card-bg: #f0f0f3;
+            --card-border: rgba(0, 0, 0, 0.06);
+            --card-hover-bg: #e8e8ef;
+            --accent-1: #149130;
+            --accent-2: #149130;
+            --text-primary: #18182a;
+            --text-secondary: #6b6b88;
+            --radius: 16px;
+            --transition: 0.25s cubic-bezier(.4, 0, .2, 1);
+        }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 48px 16px 80px;
+            overflow-x: hidden;
+        }
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
+        /* Animated gradient blobs in the background */
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.45;
+            pointer-events: none;
+            z-index: 0;
+        }
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary-dark': '#555879',
-                        'primary-light': '#98A1BC',
-                        'accent-beige': '#DED3C4',
-                        'accent-cream': '#F4EBD3',
-                    },
-                    fontFamily: {
-                        'sans': ['Open Sans', 'system-ui', 'sans-serif'],
-                    }
-                }
+        body::before {
+            width: 520px;
+            height: 520px;
+            background: radial-gradient(circle, #c8b5fc, transparent 70%);
+            top: -100px;
+            left: -120px;
+            animation: blobMove1 12s ease-in-out infinite alternate;
+        }
+
+        body::after {
+            width: 460px;
+            height: 460px;
+            background: radial-gradient(circle, #9ae8dd, transparent 70%);
+            bottom: -60px;
+            right: -80px;
+            animation: blobMove2 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes blobMove1 {
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+
+            to {
+                transform: translate(60px, 80px) scale(1.1);
             }
         }
-    </script>
+
+        @keyframes blobMove2 {
+            from {
+                transform: translate(0, 0) scale(1);
+            }
+
+            to {
+                transform: translate(-50px, -70px) scale(1.12);
+            }
+        }
+
+        /* ─── Container ─────────────────────────────────────────────── */
+        .page {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        /* ─── Profile Section ───────────────────────────────────────── */
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 36px;
+            animation: fadeDown 0.6s ease both;
+        }
+
+        /* ─── Dual Logo Row ───────────────────────────────────────── */
+        .logo-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 22px;
+        }
+
+        .logo-img {
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            object-fit: contain;
+            background: transparent;
+            box-shadow: none;
+            padding: 4px;
+            transition: transform var(--transition);
+        }
+
+        .logo-img:hover {
+            transform: translateY(-3px) scale(1.06);
+        }
+
+        .logo-times {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            line-height: 1;
+            user-select: none;
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: #111111;
+            -webkit-text-fill-color: #111111;
+        }
+
+        .profile-desc {
+            margin-top: 8px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+            max-width: 320px;
+        }
+
+        /* ─── Social Icons Row ──────────────────────────────────────── */
+        .socials {
+            display: flex;
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .social-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid var(--card-border);
+            background: var(--card-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: background var(--transition), color var(--transition), transform var(--transition);
+            font-size: 1rem;
+        }
+
+        .social-btn:hover {
+            background: var(--card-hover-bg);
+            color: var(--accent-2);
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        /* ─── Links List ────────────────────────────────────────────── */
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 18px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: background var(--transition), border-color var(--transition),
+                transform var(--transition), box-shadow var(--transition);
+            animation: fadeUp 0.5s ease both;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* shimmer line at the top on hover */
+        .link-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--accent-1), var(--accent-2), transparent);
+            transition: left 0.4s ease;
+        }
+
+        .link-card:hover::before {
+            left: 100%;
+        }
+
+        .link-card:hover {
+            background: var(--card-hover-bg);
+            border-color: rgba(123, 92, 246, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(123, 92, 246, 0.10);
+        }
+
+        /* Staggered entrance animation */
+        .link-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .link-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .link-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .link-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+
+        .link-card:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+
+        .link-card:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+
+        .link-thumb {
+            width: 52px;
+            height: 52px;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+        }
+
+        .link-thumb-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--accent-1);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        .link-info {
+            flex: 1;
+        }
+
+        .link-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--accent-2);
+            margin-bottom: 2px;
+        }
+
+        .link-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .link-arrow {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            flex-shrink: 0;
+            transition: transform var(--transition), color var(--transition);
+        }
+
+        .link-card:hover .link-arrow {
+            transform: translateX(4px);
+            color: var(--accent-2);
+        }
+
+        /* ─── Divider ────────────────────────────────────────────────── */
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--card-border), transparent);
+            margin: 32px 0 20px;
+        }
+
+        /* ─── Footer ────────────────────────────────────────────────── */
+        .footer {
+            text-align: center;
+            animation: fadeUp 0.6s ease 0.7s both;
+        }
+
+        .footer-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            color: #fff;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: opacity var(--transition), transform var(--transition), box-shadow var(--transition);
+            box-shadow: 0 4px 16px rgba(123, 92, 246, 0.25);
+        }
+
+        .footer-cta:hover {
+            opacity: 0.92;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(123, 92, 246, 0.45);
+        }
+
+        .footer-links {
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: inherit;
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* ─── Keyframes ──────────────────────────────────────────────── */
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ─── Responsive ─────────────────────────────────────────────── */
+        @media (max-width: 520px) {
+            body {
+                padding: 36px 12px 60px;
+            }
+
+            .profile-name {
+                font-size: 1.3rem;
+            }
+
+            .link-thumb,
+            .link-thumb-icon {
+                width: 44px;
+                height: 44px;
+            }
+
+            .link-title {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
 </head>
 
-<body class="font-sans bg-white text-gray-900">
+<body>
+    <div class="page">
 
-    <!-- Navigation Bar -->
-    <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-primary-dark">
-                        RuangAI Bootcamp
-                    </a>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#curriculum" class="text-gray-700 hover:text-primary-dark transition">Kurikulum</a>
-                    <a href="#value" class="text-gray-700 hover:text-primary-dark transition">Nilai</a>
-                    <a href="#graduation" class="text-gray-700 hover:text-primary-dark transition">Apresiasi</a>
-                    <a href="#faq" class="text-gray-700 hover:text-primary-dark transition">FAQ</a>
-                    <a href="#daftar" class="btn-primary px-6 py-2.5 rounded-full">
-                        Daftar Sekarang
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+        <!-- ── Profile ───────────────────────────────────── -->
+        <div class="profile">
+            <!-- Dual logo: Logo 1 × Logo 2 -->
+            <div class="logo-row">
+                <img src="images/codepolitan.png" alt="Logo 1" class="logo-img" id="logo1" />
+                <span class="logo-times">×</span>
+                <img src="images/teladanrasul.png" alt="Logo 2" class="logo-img" id="logo2" />
             </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <div class="flex flex-col space-y-3">
-                    <a href="#curriculum"
-                        class="text-gray-700 hover:text-primary-dark transition px-4 py-2">Kurikulum</a>
-                    <a href="#value" class="text-gray-700 hover:text-primary-dark transition px-4 py-2">Nilai</a>
-                    <a href="#graduation"
-                        class="text-gray-700 hover:text-primary-dark transition px-4 py-2">Apresiasi</a>
-                    <a href="#faq" class="text-gray-700 hover:text-primary-dark transition px-4 py-2">FAQ</a>
-                    <a href="#daftar" class="btn-primary px-6 py-2.5 rounded-full mx-4 text-center">
-                        Daftar Sekarang
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
+            <h1 class="profile-name">Workshop AI untuk Dakwah dan Usaha</h1>
+            <p class="profile-desc">
+                Bikin konten kebaikan dan promosi bisnis dalam hitungan menit, tanpa pusing ngedit!
+            </p>
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative pt-20 min-h-screen flex items-center overflow-hidden bg-primary-dark">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0"
-                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
-            </div>
+
         </div>
 
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Hero Content -->
-                <div class="text-white">
-                    <div
-                        class="inline-block mb-4 px-4 py-2 bg-yellow-400 text-gray-900 rounded-full text-sm font-semibold">
-                        <i class="fas fa-fire mr-2"></i>BEASISWA TERBATAS - BATCH 1
-                    </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                        Berhenti Jadi Penonton. <span class="text-accent-cream">Kuasai Skill AI Video Sekarang</span>,
-                        atau Tertinggal Selamanya.
-                    </h1>
-                    <p class="text-lg sm:text-xl text-gray-300 mb-8 leading-relaxed">
-                        Era di mana bikin video sinematik butuh waktu berminggu-minggu sudah berakhir. Masuk ke
-                        <strong>AI Video Creator Bootcamp (Batch 1)</strong>. Kami bongkar rahasia membuat konten visual
-                        kelas dunia hanya dalam hitungan detik—tanpa kamera mahal, tanpa skill editing rumit.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#daftar"
-                            class="btn-cta px-8 py-4 rounded-full text-lg font-bold text-center transform hover:scale-105 transition-all">
-                            DAFTAR SEKARANG - BEASISWA TERBATAS!
-                        </a>
-                        <a href="#curriculum"
-                            class="px-8 py-4 rounded-full text-lg font-semibold text-center border-2 border-white hover:bg-white hover:text-primary-dark transition-all">
-                            Lihat Kurikulum
-                        </a>
-                    </div>
+        <!-- ── Link Cards ─────────────────────────────────── -->
+        <div class="links" id="linkList">
 
-                    <!-- Stats -->
-                    <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-600">
-                        <div>
-                            <div class="text-3xl font-bold text-accent-cream">1000+</div>
-                            <div class="text-sm text-gray-400">Peserta</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-primary-light">2 Hari</div>
-                            <div class="text-sm text-gray-400">Intensive</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-yellow-400">100%</div>
-                            <div class="text-sm text-gray-400">Gratis</div>
-                        </div>
-                    </div>
+            <a href="https://codepolitan.notion.site/persiapan-workshop-ai?source=copy_link" target="_blank"
+                rel="noopener" class="link-card" id="link1">
+                <div class="link-thumb-icon"><i class="fa-solid fa-list-check"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Persiapan Workshop</div>
                 </div>
+                <span class="link-arrow">→</span>
+            </a>
 
-                <!-- Hero Visual -->
-                <div class="relative-delay">
-                    <div class="video-showcase">
-                        <img src="assets/videos/ai-video-1.png" alt="AI Generated Video Example"
-                            class="rounded-2xl shadow-2xl w-full">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <div
-                                class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition">
-                                <svg class="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-4 text-gray-300 text-sm">
-                        <span class="inline-block px-3 py-1 bg-primary-dark/30 rounded-full">
-                            <i class="fas fa-bolt mr-2"></i>Dibuat dengan AI dalam 30 detik
-                        </span>
-                    </div>
+            <a href="https://codepolitan.notion.site/Panduan-Cara-Install-Aplikasi-Wan-AI-313944ea682e809bb718f1b06a5306b9?source=copy_link"
+                target="_blank" rel="noopener" class="link-card" id="link2">
+                <div class="link-thumb-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Panduan Cara Install Aplikasi Wan AI</div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <span class="link-arrow">→</span>
+            </a>
 
-    <!-- Hook Section: Why Now? -->
-    <section id="hook" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-                    Dunia Konten Sedang Berubah. <br>
-                    <span class="text-primary-dark">
-                        Kamu Mau Jadi Pemain atau Korban?
-                    </span>
-                </h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- The Old Way -->
-                <div class="comparison-card bg-gray-100 p-8 rounded-2xl">
-                    <div class="text-4xl mb-4"><i class="fas fa-sad-tear"></i></div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">The Old Way</h3>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-2"><i class="fas fa-times-circle"></i></span>
-                            <span>Belajar Adobe Premiere berbulan-bulan</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-2"><i class="fas fa-times-circle"></i></span>
-                            <span>Sewa studio mahal</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-2"><i class="fas fa-times-circle"></i></span>
-                            <span>Komputer lemot saat rendering</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-red-500 mr-2"><i class="fas fa-times-circle"></i></span>
-                            <span>Waktu produksi berminggu-minggu</span>
-                        </li>
-                    </ul>
+            <a href="https://codepolitan.notion.site/Panduan-Cara-Mendapatkan-Alibaba-Cloud-ID-313944ea682e80e6b836e1beec2c2f3f?source=copy_link"
+                target="_blank" rel="noopener" class="link-card" id="link3">
+                <div class="link-thumb-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Panduan Cara Mendapatkan Akun Alibaba Cloud</div>
                 </div>
+                <span class="link-arrow">→</span>
+            </a>
 
-                <!-- The New Way -->
-                <div class="comparison-card gradient-card p-8 rounded-2xl text-white shadow-xl">
-                    <div class="text-4xl mb-4"><i class="fas fa-rocket"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">The New Way (AI)</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <span class="text-green-300 mr-2"><i class="fas fa-check-circle"></i></span>
-                            <span>Cukup imajinasi dan instruksi teks</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-300 mr-2"><i class="fas fa-check-circle"></i></span>
-                            <span>Tanpa peralatan mahal</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-300 mr-2"><i class="fas fa-check-circle"></i></span>
-                            <span>Hasil instant dalam detik</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-green-300 mr-2"><i class="fas fa-check-circle"></i></span>
-                            <span>Lebih sinematik & viral</span>
-                        </li>
-                    </ul>
+            <a href="#" target="_blank" rel="noopener" class="link-card" id="link4">
+                <div class="link-thumb-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Slide Materi Workshop</div>
                 </div>
+                <span class="link-arrow">→</span>
+            </a>
 
-                <!-- The Fact -->
-                <div class="comparison-card bg-yellow-50 p-8 rounded-2xl border-2 border-yellow-400">
-                    <div class="text-4xl mb-4"><i class="fas fa-chart-bar"></i></div>
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800">The Fact</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                        Content Creator yang menggunakan AI berkembang <strong class="text-primary-dark">10x lebih
-                            cepat</strong> daripada mereka yang manual.
-                    </p>
-                    <div class="mt-6 p-4 bg-yellow-100 rounded-lg">
-                        <p class="font-semibold text-gray-800">
-                            Ini bukan soal "bisa atau tidak", ini soal "siapa yang lebih dulu menguasai pasar".
-                        </p>
-                    </div>
+            <a href="#" target="_blank" rel="noopener" class="link-card" id="link5">
+                <div class="link-thumb-icon"><i class="fa-solid fa-video"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Panduan Membuat Video dengan Wan AI</div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <span class="link-arrow">→</span>
+            </a>
 
-    <!-- Video Showcase -->
-    <section class="py-16 bg-accent-cream">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold mb-4">Hasil Video AI yang Akan Kamu Buat</h3>
-                <p class="text-gray-600">Lihat sendiri kualitas sinematik yang bisa kamu ciptakan</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="video-card">
-                    <img src="assets/videos/ai-video-1.png" alt="AI Video 1"
-                        class="w-full h-64 object-cover rounded-xl">
-                    <p class="text-center mt-3 text-sm text-gray-600">Futuristic Cityscape</p>
+            <a href="#" target="_blank" rel="noopener" class="link-card" id="link6">
+                <div class="link-thumb-icon"><i class="fa-solid fa-note-sticky"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Kumpulan Prompt untuk Membuat Video dengan Wan AI</div>
                 </div>
-                <div class="video-card-delay">
-                    <div class="w-full h-64 bg-primary-light rounded-xl flex items-center justify-center">
-                        <span class="text-white text-6xl"><i class="fas fa-video"></i></span>
-                    </div>
-                    <p class="text-center mt-3 text-sm text-gray-600">Digital Transformation</p>
+                <span class="link-arrow">→</span>
+            </a>
+
+            <a href="https://forms.gle/4HfRFb1SKwW5Kyv27" target="_blank" rel="noopener" class="link-card" id="link7">
+                <div class="link-thumb-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Tugas Workshop</div>
                 </div>
-                <div class="video-card">
-                    <div class="w-full h-64 bg-accent-beige rounded-xl flex items-center justify-center">
-                        <span class="text-white text-6xl"><i class="fas fa-water"></i></span>
-                    </div>
-                    <p class="text-center mt-3 text-sm text-gray-600">Nature Morphing</p>
+                <span class="link-arrow">→</span>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener" class="link-card" id="link8">
+                <div class="link-thumb-icon"><i class="fa-solid fa-star"></i></div>
+                <div class="link-info">
+                    <div class="link-title">Testimony</div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <span class="link-arrow">→</span>
+            </a>
 
-    <!-- Curriculum Section -->
-    <section id="curriculum" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-                    <span class="text-primary-dark">
-                        2-Day Intensive Sprint
-                    </span>
-                </h2>
-                <p class="text-xl text-gray-600">Padat, Langsung Praktik, Hasil Terlihat</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Day 1 -->
-                <div class="bg-primary-dark p-8 rounded-2xl text-white shadow-xl">
-                    <div
-                        class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
-                        HARI 1
-                    </div>
-                    <h3 class="text-3xl font-bold mb-6">The Brain<br>(Mastering The Engine)</h3>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div
-                                class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-800 font-bold mr-4 flex-shrink-0">
-                                1
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Akses Eksklusif ke Teknologi AI Video</h4>
-                                <p class="text-gray-100 text-sm">Tanpa ribet, tanpa drama. Langsung praktik!</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <div
-                                class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-800 font-bold mr-4 flex-shrink-0">
-                                2
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Prompt Engineering Secrets</h4>
-                                <p class="text-gray-100 text-sm">Cara menulis perintah agar AI memberikan hasil visual
-                                    yang detail, tajam, dan tidak "aneh"</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <div
-                                class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-800 font-bold mr-4 flex-shrink-0">
-                                3
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Teknik Storytelling 15 Detik</h4>
-                                <p class="text-gray-100 text-sm">Yang bikin audiens berhenti scrolling</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Day 2 -->
-                <div class="bg-primary-light p-8 rounded-2xl text-white shadow-xl">
-                    <div
-                        class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
-                        HARI 2
-                    </div>
-                    <h3 class="text-3xl font-bold mb-6">The Action<br>(Production & Viral Formula)</h3>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div
-                                class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-800 font-bold mr-4 flex-shrink-0">
-                                1
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Eksekusi Video Sinematik Pertama</h4>
-                                <p class="text-gray-100 text-sm">Project Akhir yang jadi portofolio kamu</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <div
-                                class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-800 font-bold mr-4 flex-shrink-0">
-                                2
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Rahasia Post-Production AI</h4>
-                                <p class="text-gray-100 text-sm">Agar video terlihat seperti hasil kamera 100 Juta</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start">
-                            <div
-                                class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-gray-800 font-bold mr-4 flex-shrink-0">
-                                3
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Graduation Task</h4>
-                                <p class="text-gray-100 text-sm">Publikasi karya dan pengakuan keahlian secara publik
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Value Comparison Section -->
-    <section id="value" class="py-20 bg-gray-800 text-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-                        The "Stupid if You Miss It" Section
-                    </h2>
-                    <p class="text-xl text-gray-300">Bandingkan Nilai yang Kamu Dapat</p>
-                </div>
-
-                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/20-delay">
-                    <div class="space-y-6 mb-8">
-                        <div class="flex justify-between items-center pb-4 border-b border-white/20">
-                            <span class="text-lg">Harga Normal Pelatihan Sejenis</span>
-                            <span class="text-2xl font-bold line-through text-gray-400">Rp 2.500.000</span>
-                        </div>
-                        <div class="flex justify-between items-center pb-4 border-b border-white/20">
-                            <span class="text-lg">Biaya Alat & Kredit AI</span>
-                            <span class="text-2xl font-bold line-through text-gray-400">Rp 500.000</span>
-                        </div>
-                        <div class="flex justify-between items-center pb-4 border-b border-white/20">
-                            <span class="text-lg font-semibold">Total Nilai</span>
-                            <span class="text-2xl font-bold line-through text-gray-400">Rp 3.000.000</span>
-                        </div>
-
-                        <div class="bg-yellow-400 -mx-8 md:-mx-12 px-8 md:px-12 py-8 mt-8">
-                            <div class="flex justify-between items-center">
-                                <span class="text-2xl font-bold text-gray-900">Biaya Kamu:</span>
-                                <span class="text-5xl font-black text-gray-900">Rp 0</span>
-                            </div>
-                            <div class="text-center mt-4">
-                                <span
-                                    class="inline-block px-6 py-3 bg-gray-900 text-yellow-400 rounded-full text-lg font-bold">
-                                    100% BEASISWA oleh CODEPOLITAN x Alibaba Cloud
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-primary-light/20 backdrop-blur-sm rounded-2xl p-6 mt-8">
-                        <p class="text-center text-lg leading-relaxed">
-                            <strong>Kenapa kami menggratiskan ini?</strong><br>
-                            Karena kami butuh talenta digital Indonesia yang adaptif. <br>
-                            <span class="text-yellow-400 font-semibold">Kami investasi di kamu, kamu investasi di ide
-                                kamu.</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Graduation & Appreciation Section -->
-    <section id="graduation" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-                    <span class="text-primary-dark">
-                        Syarat Kelulusan & Apresiasi
-                    </span>
-                </h2>
-                <p class="text-xl text-gray-600">Dapatkan Sertifikat & Dukungan Fasilitas</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto">
-                <!-- Graduation Requirements -->
-                <div class="bg-accent-cream rounded-2xl p-8 mb-8">
-                    <h3 class="text-2xl font-bold mb-4 text-gray-800"><i class="fas fa-scroll mr-2"></i>Untuk Lulus &
-                        Mendapat E-Certificate of AI
-                        Mastery</h3>
-                    <p class="text-gray-700 mb-6">Kamu hanya perlu menyelesaikan 1 tugas sederhana:</p>
-
-                    <div class="space-y-4">
-                        <div class="flex items-start bg-white p-4 rounded-xl">
-                            <div
-                                class="w-10 h-10 bg-primary-dark text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
-                                1
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-1">Buat 1 Video Kreatif (Tugas Akhir)</h4>
-                                <p class="text-gray-600 text-sm">Berdurasi minimal 15 detik menggunakan tools yang
-                                    diajarkan</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start bg-white p-4 rounded-xl">
-                            <div
-                                class="w-10 h-10 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
-                                2
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-1">Submit Video</h4>
-                                <p class="text-gray-600 text-sm">Sebagai bukti kamu sudah paham cara kerja teknologinya
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Appreciation Prizes -->
-                <div class="bg-yellow-400 rounded-2xl p-8 text-gray-900">
-                    <h3 class="text-2xl font-bold mb-4"><i class="fas fa-trophy mr-2"></i>Bonus Apresiasi untuk Lulusan
-                        Terbaik</h3>
-                    <p class="mb-6">Bagi <strong>3 peserta</strong> dengan Tugas Akhir paling memukau:</p>
-
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-6 text-center">
-                            <div class="text-4xl mb-3"><i class="fas fa-laptop"></i></div>
-                            <h4 class="font-bold text-lg mb-2">1 Unit Laptop</h4>
-                            <p class="text-sm text-gray-700">Acer Nitro 16<br>(Mesin tempur konten kamu)</p>
-                        </div>
-
-                        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-6 text-center">
-                            <div class="text-4xl mb-3"><i class="fas fa-money-bill-wave"></i></div>
-                            <h4 class="font-bold text-lg mb-2">Dana Apresiasi</h4>
-                            <p class="text-sm text-gray-700">Rp 5.000.000<br>Cash!</p>
-                        </div>
-
-                        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-6 text-center">
-                            <div class="text-4xl mb-3"><i class="fas fa-graduation-cap"></i></div>
-                            <h4 class="font-bold text-lg mb-2">Beasiswa Full</h4>
-                            <p class="text-sm text-gray-700">Generative AI Program<br>di RuangAI</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-accent-cream">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-                    <span class="text-primary-dark">
-                        FAQ
-                    </span>
-                </h2>
-                <p class="text-xl text-gray-600">The Objection Killer</p>
-            </div>
-
-            <div class="max-w-3xl mx-auto space-y-4">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-lg text-gray-800">Beneran gratis?</span>
-                        <svg class="faq-icon w-6 h-6 text-primary-dark transform transition-transform" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6">
-                        <p class="text-gray-600">Ya, <strong>100% gratis</strong> selama kuota beasiswa masih ada. Tidak
-                            ada biaya tersembunyi sama sekali. Ini adalah program CSR dari CODEPOLITAN x Alibaba Cloud
-                            untuk meningkatkan talenta digital Indonesia.</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden-delay">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-lg text-gray-800">Saya gaptek, apa bisa?</span>
-                        <svg class="faq-icon w-6 h-6 text-primary-dark transform transition-transform" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6">
-                        <p class="text-gray-600">Justru AI dibuat untuk orang yang tidak ingin ribet dengan teknis.
-                            <strong>Kalau kamu bisa ngetik di WhatsApp, kamu bisa ikut bootcamp ini.</strong> Kami akan
-                            ajari dari nol dengan cara yang sangat mudah dipahami.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-lg text-gray-800">Waktunya kapan?</span>
-                        <svg class="faq-icon w-6 h-6 text-primary-dark transform transition-transform" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6">
-                        <p class="text-gray-600">Cuma <strong>2 hari</strong>. Sangat singkat, sangat padat, hasil
-                            langsung terlihat. Jadwal lengkap akan dikirim setelah kamu terdaftar. Format online via
-                            Zoom, jadi bisa dari mana saja!</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden-delay">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-lg text-gray-800">Apakah dapat sertifikat?</span>
-                        <svg class="faq-icon w-6 h-6 text-primary-dark transform transition-transform" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6">
-                        <p class="text-gray-600">Ya! Semua peserta yang menyelesaikan tugas akhir akan mendapat
-                            <strong>E-Certificate of AI Mastery</strong> yang bisa kamu pakai untuk CV dan LinkedIn.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 5 -->
-                <div class="faq-item bg-white rounded-xl shadow-sm overflow-hidden">
-                    <button
-                        class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-lg text-gray-800">Berapa kuota peserta?</span>
-                        <svg class="faq-icon w-6 h-6 text-primary-dark transform transition-transform" fill="none"
-                            stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6">
-                        <p class="text-gray-600">Hanya <strong>1.000 peserta untuk Batch 1</strong>. Setelah penuh,
-                            pendaftaran akan ditutup atau dikenakan biaya normal. First come, first served!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Closing CTA Section -->
-    <section id="daftar" class="py-20 bg-primary-dark text-white relative overflow-hidden">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute inset-0"
-                style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;">
-            </div>
         </div>
 
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                    Kesempatan Tidak Datang Dua Kali.
-                </h2>
-                <p class="text-xl sm:text-2xl text-gray-300 mb-4">
-                    Slot beasiswa Batch 1 hanya tersedia untuk <strong class="text-yellow-400">1.000 peserta</strong>.
-                </p>
-                <p class="text-lg text-gray-400 mb-8">
-                    Setelah penuh, pendaftaran akan ditutup atau dikenakan biaya normal.
-                </p>
+    </div><!-- /page -->
 
-                <!-- Urgency Counter -->
-                <div class="inline-block bg-red-500 text-white px-6 py-3 rounded-full mb-8 animate-pulse">
-                    <span class="font-bold"><i class="fas fa-exclamation-triangle"></i> SISA SLOT: 847 / 1000</span>
-                </div>
+    <script>
+        // ── Click-ripple effect on link cards ─────────────────────────
+        document.querySelectorAll('.link-card').forEach(card => {
+            card.addEventListener('click', function (e) {
+                const ripple = document.createElement('span');
+                const rect = card.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.cssText = `
+          position:absolute; border-radius:50%; background:rgba(255,255,255,0.08);
+          width:${size}px; height:${size}px;
+          left:${e.clientX - rect.left - size / 2}px;
+          top:${e.clientY - rect.top - size / 2}px;
+          transform:scale(0); animation:ripple .55s linear; pointer-events:none;
+        `;
+                card.style.position = 'relative';
+                card.appendChild(ripple);
+                ripple.addEventListener('animationend', () => ripple.remove());
+            });
+        });
 
-                <div class="space-y-4">
-                    <a href="https://forms.gle/your-form-link" target="_blank"
-                        class="btn-cta-large inline-block px-12 py-5 rounded-full text-xl font-bold transform hover:scale-105 transition-all shadow-2xl">
-                        <i class="fas fa-rocket"></i> AMBIL JATAH BEASISWA SAYA SEKARANG!
-                    </a>
-                    <p class="text-sm text-gray-400">
-                        <i class="fas fa-check-circle"></i> Gratis 100% • <i class="fas fa-check-circle"></i> Sertifikat
-                        • <i class="fas fa-check-circle"></i> Laptop & Hadiah untuk Top 3
-                    </p>
-                </div>
+        // ── Copy link on double-click ──────────────────────────────────
+        document.querySelectorAll('.link-card').forEach(card => {
+            card.addEventListener('dblclick', function (e) {
+                e.preventDefault();
+                const url = card.href;
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText(url).then(() => showToast('Link disalin! 📋'));
+                }
+            });
+        });
 
-                <!-- Trust Badges -->
-                <div class="mt-16 pt-8 border-t border-white/20">
-                    <p class="text-gray-400 mb-4">Didukung oleh:</p>
-                    <div class="flex justify-center items-center space-x-8">
-                        <div class="text-2xl font-bold">CODEPOLITAN</div>
-                        <div class="text-2xl font-bold">Alibaba Cloud</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        // ── Toast Notification ─────────────────────────────────────────
+        function showToast(msg) {
+            const t = document.createElement('div');
+            t.textContent = msg;
+            t.style.cssText = `
+        position:fixed; bottom:30px; left:50%; transform:translateX(-50%) translateY(20px);
+        background:#18182a; color:#f0f0f8; padding:10px 22px; border-radius:999px;
+        font-size:.85rem; font-weight:600; box-shadow:0 4px 20px rgba(0,0,0,.15);
+        border:1px solid rgba(0,0,0,.08); opacity:0;
+        transition: opacity .3s, transform .3s; pointer-events:none; z-index:9999;
+      `;
+            document.body.appendChild(t);
+            requestAnimationFrame(() => {
+                t.style.opacity = '1';
+                t.style.transform = 'translateX(-50%) translateY(0)';
+            });
+            setTimeout(() => {
+                t.style.opacity = '0';
+                t.style.transform = 'translateX(-50%) translateY(10px)';
+                setTimeout(() => t.remove(), 350);
+            }, 2500);
+        }
+    </script>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h3 class="text-2xl font-bold text-white mb-4">AI Video Creator Bootcamp</h3>
-                <p class="mb-4">Batch 1 - Program Beasiswa CODEPOLITAN x Alibaba Cloud</p>
-                <div class="flex justify-center space-x-6 text-sm">
-                    <a href="#" class="hover:text-white transition">Syarat & Ketentuan</a>
-                    <a href="#" class="hover:text-white transition">Kebijakan Privasi</a>
-                    <a href="#" class="hover:text-white transition">Kontak</a>
-                </div>
-                <p class="mt-8 text-sm text-gray-500">
-                    © 2026 RuangAI Bootcamp. All rights reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    <!-- Ripple keyframe injected via JS to keep it isolated -->
+    <style>
+        @keyframes ripple {
+            to {
+                transform: scale(2.5);
+                opacity: 0;
+            }
+        }
+    </style>
 </body>
 
 </html>
